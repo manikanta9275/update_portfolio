@@ -9,7 +9,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:64978", "http://localhost:3000"]}})
 
 # ---------------- CONFIG ----------------
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Update with your SMTP server details
@@ -25,6 +24,9 @@ otp_store = {}
 
 # ---------------- OTP GENERATOR ----------------
 def generate_otp():
+    
+    
+    
     return str(secrets.randbelow(10000)).zfill(4)
 
 # ---------------- SEND OTP ----------------
@@ -50,8 +52,11 @@ def send_otp():
         recipients=[email]
     )
     msg.body = f"Your OTP is: {otp}. Valid for 5 minutes."
+    try:
+        mail.send(msg)
+    except Exception as e:
+        print("Failed to send email:", e)
 
-    mail.send(msg)
     return jsonify({"status": "OTP sent"})
 
 
