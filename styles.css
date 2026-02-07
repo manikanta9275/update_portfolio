@@ -1,0 +1,243 @@
+        body {
+            font-family: 'Lora', serif;
+            background-color: rgba(163, 194, 197, 0.288) ;
+            color: black;
+            line-height: 1.8;
+        }
+        .contact ,.projects,.about,.skill {
+            background-color:#ffffff;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border-color: #090909;
+            padding: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #portfolioContent { display: none; }
+  #overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+        .navbar {
+            z-index: 10;
+            background-color: rgb(200, 222, 229);
+            backdrop-filter: blur(10px);
+        }
+        
+    
+        /* Hide the other sections initially */
+        
+        .sevillana-regular {
+            font-family: "Sevillana", cursive; /* Retain original font family */
+            font-weight: 700; /* Make the font bolder */
+            margin-left: 20px; /* Retain left margin */
+            font-size: 24px; /* Adjust font size */
+            color: #2c3e50; /* Change to a darker shade */
+            font-style: normal; /* Normal font style */
+            text-decoration: none; /* No underline */
+            padding: 10px 15px; /* Add padding for better clickability */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        } 
+        
+        .nav-link {
+            margin-right: 20px;
+            color: #090909;
+            font-family: 'Raleway', sans-serif;
+            padding: 10px 50px; /* Adds padding inside the box */
+            border-radius: 8px; /* Makes the corners rounded */
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover */
+            display: inline-block; /* Ensures the padding and border are applied properly */
+        }
+        
+        .nav-link:hover {
+            background-color: #89d8d8; /* Changes background color on hover */
+            color: #161514; /* Changes text color on hover */
+        }
+        
+        .about-content {
+            margin-left: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .des2 {
+            font-style: italic;
+            font-size: 18px;
+            text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+        }
+        
+        /* Ensures text is properly aligned and spaced */
+        .about-content .text-left {
+            flex: 1; /* Takes up the remaining space on the left */
+            max-width: 600px; /* Ensures content doesn't stretch too far */
+        }
+        .hello{
+            margin-top: 80px;
+        }
+        /* Image Styling */
+        .image1 {
+            margin-top: -40px;
+            height: 400px;
+            width: 400px;
+            margin-left: 50px; 
+        }
+        
+        .wid{
+            width: 130%;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            color: #6ea7ca;
+        }
+        .lead {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+        .social-icons i {
+            flex-direction: row;
+            margin-left: 0px;
+            margin-bottom: 20px;
+            font-size: 1.5rem; /* Adjust the size as needed */
+            margin-right: 10px; /* Space between icons */
+        }
+        
+        .social-icons a {
+            color: #0077b5; /* Default color for icons */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+            gap: 5px;
+        }
+        .skill-card {
+            /* color: white; */
+            background-color: #4ea7d653;
+            padding: 10px;
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .skill-card i {
+            color: #ffd700;
+            font-size: 30px;
+        }
+        
+        .highlight {
+            margin-left: 10px;
+            color: #007bff; /* Adjust to your theme color */
+        }
+        
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .project-card img {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body, .card-footer {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card-title {
+            color: #4a90e2;
+        }
+        .btn-primary {
+            background-color: #4a90e2;
+            border-color: #4a90e2;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background-color: #4ae29e;
+            color: #333;
+        }
+        .btn-outline-primary {
+            color: #6c63ff;
+            border-color: #4a90e2;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+        }
+        .btn-outline-primary:hover {
+            background-color: #4a90e2;
+        }
+        .sub{
+            margin-bottom: 40px;
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: 1px solid black;
+            color: #090909; /* Darker color for better readability */
+        }
+        
+        .form-control::placeholder {
+            color: rgba(9, 10, 10, 0.7);
+        }
+        /* @media (max-width: 358px) {
+            .image1{
+                margin-top: -80px;
+                margin-right: -80px;
+                width: 100px;
+                height: 100px;
+            }
+            .hello{
+                margin-top: -200px;
+            }
+        } */
+        @media (max-width: 769px) {
+            .image1{
+                margin-right: auto;
+                margin-top: -60px;
+            }
+            .hello{
+                color: black;
+                margin-top: -50px !important;
+                align-self: flex-start;
+            }
+        }
+        @media (max-width: 993px) {
+            .about-content {
+                margin-left: 0px;
+                flex-direction: column-reverse; /* Stacks the image on top and text below */
+            }
+            .wid{
+                width: auto;
+            }
+            .about-content .image1 {
+                height: 300px;
+                width: 300px; /* Smaller size for mobile */
+            }
+            .image1{
+                margin-left: auto; 
+            }
+            .hello{
+                margin-top: -130px;
+            }
+            .skill_p{
+                font-size: 12px;
+            }
+        }
+        

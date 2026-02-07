@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikanta portfolio</title>
+    <link rel="icon" href="./assets/passport_photo.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body>
+     <!-- Email Overlay -->
+    <div id="overlay">
+  <div class="bg-white p-4 rounded text-center" style="width:300px;">
+    <h5>Email Verification</h5>
+
+    <input type="email" id="otpEmail" class="form-control mb-2" placeholder="Enter email" required>
+
+<button id="sendOtpBtn"
+        class="btn btn-primary w-100 mb-2"
+        onclick="sendOTP()">
+  Send OTP
+</button>
+
+    <input type="text" id="otp" class="form-control mb-2" placeholder="Enter OTP" style="display:none;">
+    <button class="btn btn-success w-100" id="verifyBtn" style="display:none;" onclick="verifyOTP()">Verify OTP</button>
+
+    <p id="msg" class="mt-2 text-danger"></p>
+  </div>
+</div>
+    <div id="portfolioContent" class="container mt-5">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="sevillana-regular" href="#">K. Manikanta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- About -->
+        <section id="about" class="about">
+            <!-- Header and About Me Combined -->
+            <div class="about-content d-flex justify-content-between align-items-start mb-5">
+                <div class="text-left">
+                    <header class="hello">
+                        <h1 class="display-4 fw-bold">Hello,</h1>
+                        <h1 class="display-6 fw-bold">I'm Manikanta</h1>
+                    </header>
+        
+                    <!-- About Section -->
+                    <div class="about-info mt-4">
+                        <p class="wid">I have a strong foundation in full stack development, and a passion for solving complex problems through code.</p>
+                        <p class="des2">Let's connect to create something impactful together!</p>
+                        <div class="mt-4">
+                            <div class="social-icons mb-3">
+                                <a href="https://www.linkedin.com/in/manikanta-kotti-2a3040289/" target="_blank" class="text-decoration-none me-2">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="https://github.com/manikanta9275" target="_blank" class="text-decoration-none me-2">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                                <a href="mailto:manikantakotti9275@gmail.com" class="text-decoration-none">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./assets/resume_up2.pdf" download="Manikanta_Resume.pdf" class="btn btn-primary me-2" download>Download CV</a>
+                                <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+        
+                <!-- Image on the Right Side -->
+                <img class="image1 rounded-circle" src="./assets/profile.png" alt="Manikanta">
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <!-- <section id="skills" class="skills">
+            <h2 class="h3 mb-3">Skills:</h2>
+            <p class="skill_p">A skilled full-stack developer proficient in Java and Python for backend solutions, with expertise in HTML, CSS, and JavaScript for dynamic front-end experiences. Experienced with Django, Flask, Node.js, Express.js, React, and MongoDB for building interactive UIs and scalable data management.</p> -->
+            <section id="skills" class="skill">
+                <h2>Skills</h2>
+                <p class="skill_p">A skilled full-stack developer proficient in Python for backend solutions, with expertise in HTML, CSS, and JavaScript for dynamic front-end experiences. Experienced with Django, Flask, Node.js, Express.js, React, and MongoDB for building interactive UIs and scalable data management.</p>
+            <div class="skills">
+                <div class="skill-card"><i></i><p>C</p></div>
+                <div class="skill-card"><i></i><p>C++</p></div>
+                <div class="skill-card"><i></i><p>Java</p></div>
+                <div class="skill-card"><i></i><p>Python</p></div>
+                <div class="skill-card"><i></i><p>R</p></div>
+                <div class="skill-card"><i></i><p>SQL</p></div>
+                <div class="skill-card"><i></i><p>Html</p></div>
+                <div class="skill-card"><i></i><p>CSS</p></div>
+                <div class="skill-card"><i></i><p>JavaScript</p></div>
+                <div class="skill-card"><i></i><p>Flask</p></div>
+                <div class="skill-card"><i></i><p>Django</p></div>
+                <div class="skill-card"><i></i><p>MERN</p></div>
+            </div>
+        </section>
+        
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <p class="skill_p">Explore my diverse projects, where you can see my skills, creativity, and hard work. Each project reflects my focus on delivering high-quality solutions and solving problems effectively.</p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 project-card">
+                        <img src="./assets/food_blog.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Blog</h5>
+                            <p class="card-text">Developed a responsive food recipe website with dynamic slideshow and categorized pages for various items.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://github.com/manikanta9275/food_blog_html" class="btn btn-outline-primary btn-sm me-2">Source</a>
+                            <a href="https://mani-food-blog.vercel.app/" class="btn btn-primary btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 project-card">
+                        <img src="./assets/Java_Banking_System.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Java Banking System</h5>
+                            <p class="card-text">Developed a banking system in Java with features like customer creation, transaction tracking, and account management.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://github.com/manikanta9275/java-Banking-System" class="btn btn-outline-primary btn-sm me-2">Source</a>
+                            <a href="./assets/2_bank(DSA).pdf" class="btn btn-primary btn-sm" download>Document</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 project-card">
+                        <img src="./assets/Secure_Voting_System.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Secure Voting System</h5>
+                            <p class="card-text">Developed a Secure Voting System with real-time face recognition, administrative controls, and volunteer-led election management.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://github.com/manikanta9275/secure-face-voting" class="btn btn-outline-primary btn-sm me-2">Source</a>
+                            <a href="./assets/secure_voting_pro_ppt.pptx" class="btn btn-primary btn-sm" download>PPT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 project-card">
+                        <img src="./assets/Faculty_Management_System.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Faculty Management System</h5>
+                            <p class="card-text">Developed a Faculty Management System with dynamic data retrieval and visualization for faculty research impact.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://github.com/manikanta9275/faculty_manag" class="btn btn-outline-primary btn-sm me-2">Source</a>
+                            <a href="https://faculty-manag.vercel.app/index.html" class="btn btn-primary btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 project-card">
+                        <img src="./assets/Todo_Management.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Todo Management</h5>
+                            <p class="card-text">Developed a Django-based Todo Management app with user authentication, task management, and an intuitive interface.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://github.com/manikanta9275/Django_todo" class="btn btn-outline-primary btn-sm me-2">Source</a>
+                            <!-- <a href="#" class="btn btn-primary btn-sm">Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+       <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Phone Number:</label>
+                        <input type="tel" class="form-control" id="contact" name="contact" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+    </div>
+</div>
+  
+    
+    <!-- JavaScript files -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    const API_URL = "http://127.0.0.1:5000"; // CHANGE THIS
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const verified = localStorage.getItem("otpVerified");
+
+  if (verified === "true") {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("portfolioContent").style.display = "block";
+  } else {
+    document.getElementById("overlay").style.display = "flex";
+    document.getElementById("portfolioContent").style.display = "none";
+  }
+});
+
+
+
+function sendOTP() {
+  const email = document.getElementById("otpEmail").value.trim();
+  const sendBtn = document.getElementById("sendOtpBtn");
+
+  if (!email) {
+    document.getElementById("msg").innerText = "Enter email";
+    return;
+  }
+
+  fetch(`${API_URL}/send-otp`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email })
+  })
+  .then(res => res.json())
+  .then(() => {
+    document.getElementById("otp").style.display = "block";
+    document.getElementById("verifyBtn").style.display = "block";
+    document.getElementById("msg").innerText = "OTP sent to email";
+
+    // ✅ LOCK EMAIL + BUTTON
+    sendBtn.disabled = true;
+    sendBtn.innerText = "OTP Sent";
+    document.getElementById("otpEmail").readOnly = true;
+  })
+  .catch(() => {
+    document.getElementById("msg").innerText = "Failed to send OTP";
+  });
+}
+
+
+function verifyOTP() {
+  const email = document.getElementById("otpEmail").value;
+  const otp = document.getElementById("otp").value;
+
+  fetch(`${API_URL}/verify-otp`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, otp })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.verified) {
+      localStorage.setItem("otpVerified", "true"); // ✅ ADD THIS
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("portfolioContent").style.display = "block";
+    } else {
+      document.getElementById("msg").innerText = "Invalid OTP";
+    }
+  });
+}
+
+
+        // Initialize EmailJS
+        emailjs.init('IYsohbHAmQVgu__7O');
+        
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_9hcay6d', 'template_bdtekug', this)
+            .then(() => {
+                alert('Message sent!');
+                this.reset();
+            })
+            .catch(err => alert('Failed to send'));
+    });
+
+</script>
+
+    <!-- <script>
+        emailjs.init('IYsohbHAmQVgu__7O'); 
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_9hcay6d', 'template_bdtekug', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('Failed to send the message. Please try again.');
+                });
+        });
+        function toggleNavbar() {
+            const navbarCollapse = document.getElementById('navbarNav');
+            navbarCollapse.classList.remove('show');
+        }
+
+        // Email form submission
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Send email via EmailJS
+            emailjs.sendForm('service_9hcay6d', 'template_48u5m1s', this)
+    .then(function() {
+        // Show 'Thank you' message and a countdown timer
+        const thankYouMessage = document.getElementById('thankYouMessage');
+        thankYouMessage.innerHTML = 'Thank you! (2)';
+        thankYouMessage.style.display = 'block';
+
+        // Initialize countdown timer (2 seconds)
+        let countdown = 2;
+        const timer = setInterval(function() {
+            countdown--;
+
+            // Update the message with the countdown
+            if (countdown >= 0) {
+                thankYouMessage.innerHTML = `Thank you! (${countdown})`;
+            }
+
+            // Hide 'Thank you' message and email form after the countdown reaches -1
+            if (countdown < 0) {
+                clearInterval(timer);
+                thankYouMessage.style.display = 'none';
+                
+                // Now hide the email form and show other sections
+                document.getElementById('emailOverlay').style.display = 'none';
+                document.getElementById('projects').style.display = 'block';
+                document.getElementById('skills').style.display = 'block';
+                document.getElementById('contact').style.display = 'block';
+            }
+        }, 1000);  // Countdown every second
+
+    }, function(error) {
+        alert('Failed to send email. Please try again.');
+    });
+
+        });
+      
+    </script> -->
+
+</body>
+</html>
