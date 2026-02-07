@@ -3,9 +3,13 @@ from flask_cors import CORS
 from flask_mail import Mail, Message
 import secrets
 import time
+from flask_cors import CORS
+
 
 app = Flask(__name__)
 CORS(app)
+
+CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:64978", "http://localhost:3000"]}})
 
 # ---------------- CONFIG ----------------
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Update with your SMTP server details
